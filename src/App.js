@@ -1,41 +1,32 @@
+import './App.css';
 
-import React from "react";
-
-
-
-import srcimage from "./src/imageinSrc.png"
-    
-    
-function App()
-{
-    return (
-        <div className="App">
-            <header className="App-header">
-
-            <title>conversion en jsx</title>
-
-            <div style={{border: 'solid 1px black', maxWidth: '100vw'}}>
-                 <h1 className="title red">Your name here</h1>
-       
-                 <br ></br>
-       
-                 <img src={srcimage} alt="imageInsrc" >
-       
-                 <br ></br>
-       
-                 <img src="./public/imageInpublic.png" >
+function App() {
+  return (
+  
+         <div clasName="container">
+             <h1>Formulaires</h1>
+             <form>
+                 <div className="form-group">
+                   <label for="nom">Entrez votre nom</label>
+                   <input type="text" className="form-control" id="nom" placeholder="nom">
+                 </div>
+                 
+                 <div className="form-group">
+                   <label for="email">Entrez votre mail</label>
+                   <input type="email" className="form-control" id="email" placeholder="email@email.com">
+                 </div>
+                 
+                 
+                 <div className="form-group">
+                   <label for="bio">Biographie</label>
+                   <textarea className="form-control" id="bio" rows="3"></textarea>
+                 </div>
+               
+             </form>
+         </div>
+      </div>
         
-             </div>
-       
-             <video width={320} height={240} controls></video>
-       
-                <source src="myVideo.mp4" type="video/mp4" >
-       
-              </video>
-       </header>
-       </div>
-       )
- }
- 
-export default App;
+  );
+}
+
 export default App;
